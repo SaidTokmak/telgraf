@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".AddAnnouncement">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMainBlue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <Spinner
+            android:id="@+id/addNotificationSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/login_page_edittext_design">
+
+        </Spinner>
+
+        <EditText
+            android:id="@+id/addNotificationHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_page_edittext_design"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Duyuru Başlığı" />
+
+        <EditText
+            android:id="@+id/addNotificationContent"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:maxLines="8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_page_edittext_design"
+            android:gravity="left|top"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Duyurunuzu giriniz"/>
+        <Button
+            android:id="@+id/addNotificationButton"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMainBlue"
+            android:textColor="@android:color/white"
+            android:text="Duyuru Ekle"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessagePage">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMainBlue"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:theme="?attr/actionBarTheme"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarMessage"
+        android:layout_above="@+id/linearMessage" />
+    <LinearLayout
+        android:id="@+id/linearMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="@android:color/white">
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:hint="Mesajınızı yazabilirsiniz...."/>
+        <Button
+            android:id="@+id/buttonMessageSend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="OK"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/white"
+            android:foreground="@drawable/ic_arrow_forward_black_24dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

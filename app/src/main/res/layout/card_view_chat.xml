@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/layoutChatAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="10">
+
+             <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/chatCardViewImage"
+                android:layout_weight="1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/default_profile_picture"/>
+            <LinearLayout
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/chatCardViewUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserName"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <!--<TextView
+                    android:id="@+id/chatCardViewContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message content summary"
+                    android:padding="5dp"
+                    android:maxLines="1"/>-->
+            </LinearLayout>
+            <!--<TextView
+                android:id="@+id/chatCardViewTime"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="04:06"
+                android:gravity="center"
+                android:layout_gravity="center"/>-->
+
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:layout_height="1dp"
+        android:background="#d3d3d3" />
+
+</LinearLayout>

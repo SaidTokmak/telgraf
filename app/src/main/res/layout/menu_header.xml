@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorMainBlue"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/menuImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/default_profile_picture"
+        android:tint="@android:color/white"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:id="@+id/menuUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:text="Abdullah Said TOKMAK"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMainBlue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorMainBlue"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/imageViewProfil"
+                    android:maxWidth="100dp"
+                    android:maxHeight="100dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_profile_picture"
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewUserNameProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:text="Kullanıcı Adı"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:layout_marginLeft="15dp"
+                        android:padding="10dp"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:text="Şirket / Pozisyon "/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textViewBioProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMainBlue"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:text="Bio : "
+                android:minLines="2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:elevation="3dp"
+                android:text="Kullanıcı Postları"
+                android:background="@android:color/white"
+                android:gravity="center"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewProfil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@android:color/white"
+                android:padding="10dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

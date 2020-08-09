@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Telgraf</string>
+    <string name="serverUrl">http://telgraf.ankara.edu.tr/dandelion</string>
+    <string name="buton_giris">Giriş</string>
+    <string name="login_edittext_parola">parola</string>
+    <string name="login_edittext_email">e-mail</string>
+    <string name="login_sifremi_unuttum">Şifremi unuttum</string>
+</resources>
